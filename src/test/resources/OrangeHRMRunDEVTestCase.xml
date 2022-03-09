@@ -4,6 +4,7 @@
 
 	<!-- <parameter name="userNameAdmin" value="Admin"/> -->
 	<!-- <parameter name="passwordAdmin" value="admin123"/> -->
+	<parameter name="environment" value="dev" />
 
 	<listeners>
 		<!-- <listener class-name="commons.MethodListener" /> -->
