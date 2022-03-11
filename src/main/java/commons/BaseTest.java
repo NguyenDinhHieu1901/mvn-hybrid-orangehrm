@@ -84,7 +84,7 @@ public class BaseTest {
 
 		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get(getBrowserEnvironment("TESTING"));
+		driver.get(GlobalConstants.ADMIN_HRM_URL);
 		return driver;
 	}
 

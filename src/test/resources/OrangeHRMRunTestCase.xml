@@ -14,7 +14,7 @@
 	<test name="Run on Chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.hrm.employees.Level_22_Multiple_Environment" />
+			<class name="com.hrm.employees.Level_23_Database_Testing" />
 		</classes>
 	</test>
 
