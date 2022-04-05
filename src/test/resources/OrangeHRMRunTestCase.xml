@@ -14,7 +14,7 @@
 	<test name="Run on Chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.hrm.employees.Level_17_Live_Coding" />
+			<class name="com.hrm.employees.Level_20_Employee_Data_Test_IV" />
 		</classes>
 	</test>
 

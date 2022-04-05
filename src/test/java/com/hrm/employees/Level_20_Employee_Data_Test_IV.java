@@ -26,9 +26,11 @@ import utilities.EmployeeData;
 public class Level_20_Employee_Data_Test_IV extends BaseTest {
 	@Description("Pre-Condition: Opening web application and login to system")
 	@Severity(SeverityLevel.BLOCKER)
-	@Parameters({ "browser", "userNameAdmin", "passwordAdmin" })
+	@Parameters({ "browser"})
 	@BeforeClass
-	public void beforeClass(String browserName, String userNameAdmin, String passwordAdmin) {
+	public void beforeClass(String browserName) {
+		userNameAdmin = "Admin";
+		passwordAdmin = "admin123";
 		employeeData = EmployeeData.getEmployee();
 		firstName = employeeData.getFirstName();
 		lastName = employeeData.getLastName();
