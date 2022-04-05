@@ -21,7 +21,6 @@ import pageObjects.hrm.LoginPO;
 import pageObjects.hrm.MyInfoPO;
 import pageObjects.hrm.PageGeneratorManager;
 
-@Epic("Human Resource create information for a new employee and employee will be updated his every information")
 public class Level_17_Live_Coding extends BaseTest {
 	@Description("Pre-Condition: Opening web application and login to system")
 	@Severity(SeverityLevel.BLOCKER)
