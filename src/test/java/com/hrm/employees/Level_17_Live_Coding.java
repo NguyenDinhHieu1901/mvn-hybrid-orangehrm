@@ -107,7 +107,6 @@ public class Level_17_Live_Coding extends BaseTest {
 
 	@Description("Employee_01_Add_New_Employee")
 	@Story("Add New Employee to system")
-	@Severity(SeverityLevel.CRITICAL)
 	@Test
 	public void Employee_01_Add_New_Employee() {
 		log.info("Employee_01 - Step 01: Open Employee List page");
