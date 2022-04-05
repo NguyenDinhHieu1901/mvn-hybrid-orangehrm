@@ -30,7 +30,7 @@ public class Level_17_Live_Coding extends BaseTest {
 		userNameAdmin = "Admin";
 		passwordAdmin = "admin123";
 		firstName = "nguyen";
-		lastName = "test";
+		lastName = "hieu";
 		userNameEmp = firstName + lastName + generatorNumberRandom();
 		passwordEmp = firstName + lastName + "123";
 		employeeID = "";
