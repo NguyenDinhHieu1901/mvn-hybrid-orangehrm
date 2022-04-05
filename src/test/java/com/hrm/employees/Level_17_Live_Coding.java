@@ -18,8 +18,8 @@ import pageObjects.hrm.AddEmployeePO;
 import pageObjects.hrm.DashboardPO;
 import pageObjects.hrm.EmployeeListPO;
 import pageObjects.hrm.LoginPO;
-import pageObjects.hrm.PageGeneratorManager;
 import pageObjects.hrm.MyInfoPO;
+import pageObjects.hrm.PageGeneratorManager;
 
 @Epic("Human Resource create information for a new employee and employee will be updated his every information")
 public class Level_17_Live_Coding extends BaseTest {
@@ -167,7 +167,7 @@ public class Level_17_Live_Coding extends BaseTest {
 
 	@Description("Upload Avatar for New Employee")
 	@Severity(SeverityLevel.NORMAL)
-	@Test
+//	@Test
 	public void Employee_02_Upload_Avatar() {
 		log.info("Upload_Avatar_02 - Step 01: Login to system as User role with username & password: " + userNameEmp + " " + passwordEmp);
 		loginPage = employeeListPage.logoutToSystem(driver);
@@ -195,7 +195,7 @@ public class Level_17_Live_Coding extends BaseTest {
 
 	@Description("Updated information in 'Personal Details' form")
 	@Severity(SeverityLevel.CRITICAL)
-	@Test
+//	@Test
 	public void Employee_03_Personal_Details() {
 		log.info("Personal_Details_03 - Step 01: Opening 'Personal Details' form at Sidebar link");
 		myInfoPage.openSidebarLinkByName("Personal Details");
@@ -272,7 +272,7 @@ public class Level_17_Live_Coding extends BaseTest {
 
 	@Description("Updated information in 'Contact Details' form")
 	@Severity(SeverityLevel.CRITICAL)
-	@Test
+//	@Test
 	public void Employee_04_Contact_Details() {
 		log.info("Contact_Details_04 - Step 01: Open 'Contact Details' form at Sidebar link");
 		myInfoPage.openSidebarLinkByName("Contact Details");
@@ -326,7 +326,7 @@ public class Level_17_Live_Coding extends BaseTest {
 
 	@Description("Add Emergency Contacs of Employee")
 	@Severity(SeverityLevel.CRITICAL)
-	@Test
+//	@Test
 	public void Employee_05_Emergency_Contacts() {
 		log.info("Emergency_Contacts_05 - Step 01: Open 'Emergency Contacts' form at Sidebar link");
 		myInfoPage.openSidebarLinkByName("Emergency Contacts");
@@ -365,7 +365,7 @@ public class Level_17_Live_Coding extends BaseTest {
 
 	@Description("Add Dependents of Employee")
 	@Severity(SeverityLevel.CRITICAL)
-	@Test
+//	@Test
 	public void Employee_06_Assigned_Dependents() {
 		log.info("Assigened_Dependents_06 - Step 01: Open 'Dependents' form at Sidebar link");
 		myInfoPage.openSidebarLinkByName("Dependents");
@@ -396,7 +396,7 @@ public class Level_17_Live_Coding extends BaseTest {
 
 	@Description("Just only Admin role has accessed editable 'Job' form")
 	@Severity(SeverityLevel.CRITICAL)
-	@Test
+//	@Test
 	public void Employee_07_Edit_View_Job() {
 		log.info("Edit_View_Job_07 - Step 01: Open 'Job' form at Sidebar link");
 		myInfoPage.openSidebarLinkByName("Job");
@@ -496,7 +496,7 @@ public class Level_17_Live_Coding extends BaseTest {
 
 	@Description("Just only Admin role has accessed editable 'Salary' form")
 	@Severity(SeverityLevel.CRITICAL)
-	@Test
+//	@Test
 	public void Employee_08_Edit_View_Salary() {
 		log.info("Edit_View_Salary_08 - Step 01: open 'Salary' form at Sidebar link");
 		employeeListPage.openSidebarLinkByName("Salary");
@@ -595,7 +595,7 @@ public class Level_17_Live_Coding extends BaseTest {
 
 	@Description("Just only Admin role has accessed editable 'Tax Exemptions' form")
 	@Severity(SeverityLevel.CRITICAL)
-	@Test
+//	@Test
 	public void Employee_09_Edit_View_Tax() {
 		log.info("Edit_View_Tax_09 - Step 01: Open 'Tax Exemptions' form at Sidebar link");
 		myInfoPage.openSidebarLinkByName("Tax Exemptions");
@@ -675,7 +675,7 @@ public class Level_17_Live_Coding extends BaseTest {
 
 	@Description("Employee add their qualifications")
 	@Severity(SeverityLevel.CRITICAL)
-	@Test
+//	@Test
 	public void Employee_10_Qualifications() {
 		log.info("Qualifications_10 - Step 01: Login to system as User role with username & password: " + userNameEmp + " " + passwordEmp);
 		loginPage = employeeListPage.logoutToSystem(driver);
@@ -790,7 +790,7 @@ public class Level_17_Live_Coding extends BaseTest {
 
 	@Description("Search Employee")
 	@Severity(SeverityLevel.CRITICAL)
-	@Test
+//	@Test
 	public void Employee_11_Search_Employee() {
 		log.info("Search_Employee_11 - Step 01: Login to system as Admin role with username and password: " + userNameAdmin + " " + passwordAdmin);
 		loginPage = myInfoPage.logoutToSystem(driver);

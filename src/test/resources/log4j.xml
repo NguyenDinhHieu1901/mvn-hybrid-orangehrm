@@ -35,6 +35,12 @@
 		<appender-ref ref="file" />
 	</category>
 
+	<category name="datadriventesting">
+		<priority value="all" />
+		<appender-ref ref="console" />
+		<appender-ref ref="logfile" />
+		<appender-ref ref="file" />
+	</category>
 
 	<root>
 		<priority value="warn" />
