@@ -164,7 +164,6 @@ public class Level_17_Live_Coding extends BaseTest {
 	}
 
 	@Description("Upload Avatar for New Employee")
-	@Severity(SeverityLevel.NORMAL)
 //	@Test
 	public void Employee_02_Upload_Avatar() {
 		log.info("Upload_Avatar_02 - Step 01: Login to system as User role with username & password: " + userNameEmp + " " + passwordEmp);
