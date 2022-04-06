@@ -275,7 +275,6 @@ public class BaseTest {
 			}
 
 			if (driver != null) {
-				driver.manage().deleteAllCookies();
 				driver.quit();
 			}
 		} catch (Exception e) {

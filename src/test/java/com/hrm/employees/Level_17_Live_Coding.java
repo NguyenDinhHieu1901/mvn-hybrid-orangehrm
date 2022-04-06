@@ -117,10 +117,10 @@ public class Level_17_Live_Coding extends BaseTest {
 		employeeListPage.clickToButtonByID(driver, "btnAdd");
 		addEmployeePage = PageGeneratorManager.getAddEmployeePage(driver);
 
-		log.info("Employee_01 - Step 03: Input to First Name textbox");
+		log.info("Employee_01 - Step 03: Input to First Name textbox: " + firstName);
 		addEmployeePage.inputToTextboxByID(driver, "firstName", firstName);
 
-		log.info("Employee_01 - Step 04: Input to Last Name textbox");
+		log.info("Employee_01 - Step 04: Input to Last Name textbox: " + lastName);
 		addEmployeePage.inputToTextboxByID(driver, "lastName", lastName);
 
 		log.info("Employee_01 - Step 05: Get Employee ID");
@@ -165,7 +165,7 @@ public class Level_17_Live_Coding extends BaseTest {
 	}
 
 	@Description("Upload Avatar for New Employee")
-	 @Test(enabled = false)
+	@Test(enabled = false)
 	public void Employee_02_Upload_Avatar() {
 		log.info("Upload_Avatar_02 - Step 01: Login to system as User role with username & password: " + userNameEmp + " " + passwordEmp);
 		loginPage = employeeListPage.logoutToSystem(driver);
@@ -819,7 +819,8 @@ public class Level_17_Live_Coding extends BaseTest {
 	@AfterClass(alwaysRun = true)
 	public void afterClass(String browserName) {
 		log.info("Post-Condition: Cleaning the browser '" + browserName + "'");
-		closeBrowserAndDriver();
+		// closeBrowserAndDriver();
+		driver.quit();
 	}
 
 	private WebDriver driver;
